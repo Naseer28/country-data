@@ -1,0 +1,116 @@
+/* src/SearchBar.css */
+
+.search-bar-container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .autosuggest-input {
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .autosuggest-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+  }
+  
+  .react-autosuggest__suggestions-list {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 8px;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  
+  .react-autosuggest__suggestion {
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .react-autosuggest__suggestion:hover {
+    background-color: #f0f0f0;
+    color: #007bff;
+  }
+  
+  .react-autosuggest__suggestion--highlighted {
+    background-color: #e0e0e0;
+  }
+  
+  .suggestion-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .suggestion-info {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .suggestion-details {
+    font-size: 12px;
+    color: #888;
+    margin-top: 8px;
+  }
+  
+  .suggestion-details div {
+    margin-bottom: 4px;
+  }
+  
+  .country-details {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .country-details h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .country-details p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .country-details strong {
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .search-bar-container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .autosuggest-input {
+      font-size: 14px;
+    }
+  
+    .country-details h2 {
+      font-size: 20px;
+    }
+  
+    .country-details p {
+      font-size: 14px;
+    }
+  }
+  
